@@ -1,5 +1,10 @@
-body {
+.app-view {
     background: linear-gradient(135deg, #0181b0, #004277, #00345f);
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
 }
 
 /*--APP STYLES--*/
