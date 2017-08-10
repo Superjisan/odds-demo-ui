@@ -1,0 +1,152 @@
+.app-view {
+    background: linear-gradient(135deg, #0181b0, #004277, #00345f);
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+}
+
+/*--APP STYLES--*/
+
+.navbar-inverse {
+    background-color: transparent !important;
+    border-bottom: 1px solid #1b2227 !important;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white !important;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: #00345f !important;
+}
+
+.navbar-brand {
+    padding: 5px 15px !important;
+}
+
+.app-body {
+    position: fixed;
+    top: 50px;
+    background-color: #FFF;
+    height: calc(100vh - 50px - 50px);
+    width: 100vw;
+    overflow-y: auto;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100vw;
+    color: #889198;
+    border-top: 1px solid #889198;
+    padding: 15px;
+    font-size: 12px;
+}
+
+/*--CARD STYLES--*/
+
+.card {
+    height: calc(100vh - 84px);
+    border: 1px solid #ECF0F1;
+}
+
+.card-header {
+    padding: 15px;
+    background: #FFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ECF0F1;
+}
+
+.card-sub-header {
+    color: #343B40;
+    padding-right: 5px;
+    font-size: 14px;
+}
+
+.card-tagline {
+    font-size: 14px;
+    text-align: left;
+    color: #343B40;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 1px solid #ACBBC9;
+}
+
+.card-block {
+    padding: 15px;
+    font-size: 12px;
+    overflow: auto;
+    background: #FFF;
+}
+
+/*--FORMS STYLES--*/
+
+.login {
+    background: white;
+    width: 30vw;
+    border: 1px solid #ECF0F1;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .4);
+}
+
+form {
+    margin: 40px 0px;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+/*--TABLES STYLES--*/
+
+.table tbody tr:hover {
+    background-color: #e5f0f9;
+}
+
+tr:active {
+    background-color: #99c4ea;
+}
+
+td {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+/*--PAGINATION STYLES--*/
+
+.pagination {
+    margin-right: 15px !important;
+}
+
+
+/*--HELPER STYLES--*/
+
+.centered {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--SPACING STYLES--*/
+
+.no-gutters > [class*='col-'] {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.gutter-right {
+    padding-right: 0px !important;
+    padding-left: 7px !important;
+}
+
+.gutter-left {
+    padding-left: 0px !important;
+    padding-right: 7px !important;
+}
+
