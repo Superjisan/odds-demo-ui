@@ -1,0 +1,141 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.png" alt="logo" height="30px">
+            </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#!/home">Home</a></li>
+                <li><a href="#!/login">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="app-body no-gutters">
+    <div class="col-md-5">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>ADMIN</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="submit" class="btn btn-primary pull-right">Add User</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-block">
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="">
+                            <th>
+                                First Name
+                            </th>
+                            <th>
+                                Last Name
+                            </th>
+                            <th>
+                                Username
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="user in homeCtrl.users">
+                            <td ng-bind="user.firstName">John</td>
+                            <td ng-bind="user.lastName">Doe</td>
+                            <td ng-bind="user.username">JD123</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <nav aria-label="Page navigation" class="pull-right">
+                    <ul class="pagination">
+                        <li>
+                            <a aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a>1</a></li>
+                        <li><a>2</a></li>
+                        <li><a>3</a></li>
+                        <li><a>4</a></li>
+                        <li><a>5</a></li>
+                        <li>
+                            <a aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-7">
+        <div class="card">
+            <div class="card-header">
+                <div class="float-left">
+                    <h4>USER</h4>
+                </div>
+                <div class="float-right"></div>
+            </div>
+            <div class="card-block">
+                <form class="">
+                    <div class="col-md-6 gutter-left">
+                        <div class="form-group">
+                            <input type="firstName" class="form-control" id="firstName" placeholder="first name">
+                        </div>
+                        <div class="form-group">
+                            <input type="username" class="form-control" id="username" placeholder="username">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">...</select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 gutter-right">
+                        <div class="form-group">
+                            <input type="lastName" class="form-control" id="lastName" placeholder="last name">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="pwd" placeholder="password">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">...</select>
+                        </div>
+                    </div>
+
+                    <div class="form-group text-left">
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Privileged User</label>
+                        </div>
+                    </div>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+                    </label>
+                </form>
+                <button type="submit" class="btn btn-primary">Update User</button>
+                <button type="submit" class="btn btn-danger">Delete User</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="">Welcome to the Demo App!</p>
+    </div>
+</footer>
