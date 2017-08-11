@@ -9,8 +9,8 @@ COPY npm-shrinkwrap.json .
 COPY bower.json .
 
 RUN npm install --global bower
-RUN npm install
 RUN echo '{ "allow_root": true }' > /root/.bowerrc
+RUN npm install
 
 # Bundle app source
 COPY . .
