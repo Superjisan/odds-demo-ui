@@ -1,4 +1,4 @@
-FROM node:boron
+FROM node:8.3.0
 
 # Create app directory
 WORKDIR /app
@@ -8,11 +8,9 @@ COPY package.json .
 COPY npm-shrinkwrap.json .
 COPY bower.json .
 
-RUN npm install
 RUN npm install --global bower
+RUN npm install
 RUN echo '{ "allow_root": true }' > /root/.bowerrc
-
-RUN bower install
 
 # Bundle app source
 COPY . .
